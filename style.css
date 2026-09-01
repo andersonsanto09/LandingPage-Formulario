@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+.banner img{
+    width: 100%;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+
+    margin-top: 35px;
+    
+}
+
+.titulo p{
+    margin:15px auto;
+    width: 100%;
+   
+
+}
+
+/* Centralizar o corpo da página */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    /* padding: 20px; */
+    font-family: Arial, sans-serif;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.meuFormulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+
+.titulo-form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilizar o formulário */
+form {
+    background: rgb(255, 255, 255);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+/* Estilizar campos do formulário */
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+
+
+/* Estilizar botão */
+form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #b42020;
+}
+
+/* Mensagem de sucesso */
+#mensagem {
+    text-align: center;
+    color: green;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.toast {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.85);
+  background: rgba(17, 24, 39, 0.95);
+  color: #fff;
+  padding: 18px 28px;
+  border-radius: 14px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 9999;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  max-width: 90%;
+  min-width: 260px;
+  border-left: 6px solid #667eea;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Variante: sucesso (formulário enviado) */
+.toast.toast-success {
+  background: rgba(22, 101, 52, 0.97);
+  border-left-color: #22c55e;
+}
+
+/* Variante: erro (falha no envio, email inválido) */
+.toast.toast-error {
+  background: rgba(127, 29, 29, 0.97);
+  border-left-color: #ef4444;
+}
+
+/* Variante: aviso (campo em branco, checkbox não marcado) */
+.toast.toast-warning {
+  background: rgba(120, 53, 15, 0.97);
+  border-left-color: #f59e0b;
+}
+
+/* Fundo escurecido atrás do toast enquanto ele está visível */
+.toast-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 9998;
+}
+
+.toast-overlay.show {
+  opacity: 1;
+}
+
+/* Estilizar checkbox e label no mesmo lado */
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 15px 0;
+}
+.checkbox p{
+    margin: 0;
+    cursor: pointer;
+    font-size: 13px;
+}
+.checkbox input[type="checkbox"] {
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.checkbox p,
+.checkbox label {
+    margin: 0;
+    cursor: pointer;
+}
+
+.edital {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.edital h5{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.edital p{
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.edital .subtitulo{
+    text-align: right;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
